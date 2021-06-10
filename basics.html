@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Go Game Live</title>
+	<link rel="stylesheet" href="golive.css">
+<style>
+p {
+color:white;
+}
+h1 {
+color:#800080;
+}
+input[type=date] {
+  width: 50%;
+  padding: 9px 16px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align:center;
+  float:left;
+  margin-left:10px;
+  background:#21123A;
+}
+input[type=text] {
+  width: 45%;
+
+  padding: 11px 22px;
+  margin: 20px 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align:center;
+  float:left;
+  margin-left:10px;
+ 
+  background:#21123A;
+}
+input[type=number] {
+  width: 45%;
+
+  padding: 11px 22px;
+  margin: 20px 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align:center;
+  float:left;
+  margin-left:10px;
+ 
+  background:#21123A;
+}
+
+.match {
+background:#21123A;
+}
+.team {
+background:#21123A;
+}
+
+.match img {
+float:left;
+}
+.team img {
+float:left;
+}
+
+label {
+color:red;
+padding-left:670px;
+}
+.com {
+background:#21123A;
+}
+body {
+background:#21123A;
+}
+
+</style>
+</head>
+<body>
+
+<div class="match">
+<p>MATCH DETAILS</p>
+<h1>SELECTED TOURNAMENT</h1>
+<p>SKY LEAGUE TOURNAMENT</p>
+
+   <input type="date"  name="date" id="date" required> 
+   <img src="Calendar.svg">
+    <input type="text" placeholder="Enter match type" name="match" id="match" required >
+</div><br><br><br><br>
+<div class="team">
+<p>TEAMS AND SCORE</p>
+<img src="TeamBadge_Sample.png">
+<input type="text" placeholder="DELHI DRAGONS HOME TEAM" name="team" id="team" required>
+<input type="text" placeholder="SELECT TEAM GUEST TEAM" name="team" id="team" required><br>
+<input type="text" placeholder="TYPE HOME TEAM SCORE" name="team" id="team" required><br><br>
+
+<input type="number" placeholder="5" name="number" id="number" min="1" max="3"required><br><br><br>
+  <label>The input should be the number from 1 to 3 </label>
+
+</div>
+<div class="com">
+<p>COMMUNITY PREDICITIONS</p>
+
+
+<input type="number" placeholder="TYPE POLL PERCENTAGE RESULT" min="0" max="100" step="0.01" >
+<input type="number" placeholder="35% RESULT:2-1" min="0" max="100" step="0.01" >
+<input type="text" placeholder="" >
+<input type="text" placeholder="" >
+
+</div>
+</body>
+</html>
+
